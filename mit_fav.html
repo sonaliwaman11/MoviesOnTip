@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MyFavouriteMovies</title>
+</head>
+
+<body onload="getMovies(5)">
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!-- Add the following items in the navbar
+          1. logo ( logo is provided in images folder)
+          2. Application Title ( My Favourte Movies )
+          3. Navigation links : All Movies , Favourite Movies
+          4. A form with an input and a button for searching movie
+      -->
+
+      <a class="navbar-brand" href="index.html">
+        <img alt="Movies" src="images/logo.png" width="180rem">
+    </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="movies-coming.html" class="nav-item nav-link">Movies Coming</a>
+                    <a href="movies-in-theatres.html" class="nav-item nav-link">Movies in Theatres</a>
+                    <a href="top_rated_india.html" class="nav-item nav-link">Top Rated India</a>
+                    <a href="top_rated_movies.html" class="nav-item nav-link">Top Rated Movies</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i
+                        class="fa fa-heart red-text" aria-hidden="true"> </i> Favourite Movies
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mc_fav.html">Movies Coming</a></li>
+                    <li><a class="dropdown-item" href="mit_fav.html">Movies in Theatres</a></li>
+                    <li><a class="dropdown-item" href="tri_fav.html">Top Rated India</a></li>
+                    <li><a class="dropdown-item" href="trm_fav.html">Top Rated Movies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <section class="movies-container" id="moviesContainer">
+            <h2 class="error-message" id="errorMessage"></h2>
+            <div class="row justify-content-center" id='moviesList'></div>
+        </section>
+    </main>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/mit.js"></script>
+
+</body>
+
+</html>
